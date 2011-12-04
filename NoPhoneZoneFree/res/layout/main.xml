@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:id="@android:id/tabhost"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FF000000">
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		
+		<com.google.ads.AdView
+			android:id="@+id/adView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			ads:adUnitId="a14cf68a1c7071a"
+			ads:adSize="BANNER"
+			ads:loadAdOnCreate="true"/>
+			
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#FF000000"
+			android:padding="5dp">
+			
+		</FrameLayout>
+
+	</LinearLayout>
+</TabHost>

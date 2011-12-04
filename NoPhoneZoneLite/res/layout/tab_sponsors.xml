@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tabsponsors"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	
+		<TextView android:id="@+id/label_default_sponsors_title"
+			style="@style/Desc"
+			android:text="@string/tab_sponsors_desc" />
+			
+		<ImageView
+			android:id="@+id/sponsor_img_viaazul"
+			android:layout_below="@id/label_default_sponsors_title"
+			android:src="@drawable/sponsors_viaazul"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:scaleType="centerInside" />
+	
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tabsettings"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	
+		<TextView android:id="@+id/label_default_title"
+			style="@style/Title"
+			android:text="@string/tab_settings_default_message_title" />
+	
+		<TextView android:id="@+id/label_default_desc"
+			style="@style/Desc"
+			android:layout_below="@id/label_default_title"
+			android:text="@string/tab_settings_default_message_desc" />
+	
+		<EditText android:id="@+id/entry_txt"
+			style="@style/EditText"
+			android:layout_below="@id/label_default_desc"
+			android:text="@string/tab_settings_default_message_txt"
+			android:inputType="text|textMultiLine" />
+		
+		<Button android:id="@+id/bt_modify"
+			style="@style/Button"
+			android:layout_below="@id/entry_txt"
+			android:text="@string/tab_settings_bt_modify_response" />
+	
+		<TextView android:id="@+id/label_private_title"
+			style="@style/Title"
+			android:layout_below="@id/bt_modify"
+			android:text="@string/tab_settings_private_group_title" />
+	
+		<TextView android:id="@+id/label_private_desc"
+			style="@style/Desc"
+			android:layout_below="@id/label_private_title"
+			android:text="@string/tab_settings_private_group_desc" />
+	
+		<TextView android:id="@+id/label_private_lbl"
+			style="@style/Text"
+			android:layout_below="@id/label_private_desc"
+			android:text="@string/tab_settings_private_group_empty" />
+	
+		<Button android:id="@+id/bt_private_add"
+			style="@style/SideButton"
+			android:layout_below="@id/label_private_lbl"
+			android:text="@string/tab_settings_bt_private_group_add" />
+	
+		<Button android:id="@+id/bt_private_remove"
+			style="@style/SideButton"
+			android:layout_toRightOf="@id/bt_private_add"
+			android:layout_below="@id/label_private_lbl"
+			android:text="@string/tab_settings_bt_private_group_remove" />
+	
+		<CheckBox android:id="@+id/cb_silent_mode"
+			style="@style/CheckBox"
+			android:layout_below="@id/bt_private_add"
+			android:checked="true"
+			android:text="@string/tab_settings_cb_silent_mode" />
+	
+		<TextView android:id="@+id/label_cb_silent_mode"
+			style="@style/Text"
+			android:layout_below="@id/cb_silent_mode"
+			android:text="@string/tab_settings_cb_silent_mode_desc" />
+	
+		<CheckBox android:id="@+id/cb_reply_only_contacts"
+			style="@style/CheckBox"
+			android:layout_below="@id/label_cb_silent_mode"
+			android:checked="true"
+			android:text="@string/tab_settings_cb_reply_only_contacts" />
+	
+		<TextView android:id="@+id/label_cb_reply_only_contacts"
+			style="@style/Text"
+			android:layout_below="@id/cb_reply_only_contacts"
+			android:text="@string/tab_settings_cb_reply_only_contacts_desc" />
+		
+		<CheckBox android:id="@+id/cb_less_warnings"
+			style="@style/CheckBox"
+			android:layout_below="@id/label_cb_reply_only_contacts"
+			android:checked="true"
+			android:text="@string/tab_settings_cb_less_warnings" />
+	
+		<TextView android:id="@+id/label_cb_less_warnings"
+			style="@style/Text"
+			android:layout_below="@id/cb_less_warnings"
+			android:text="@string/tab_settings_cb_less_warnings_desc" />
+			
+	</RelativeLayout>
+</ScrollView>

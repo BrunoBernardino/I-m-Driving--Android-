@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tababout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FF000000">
+	
+		<TextView android:id="@+id/label_app_desc"
+			style="@style/Desc"
+			android:text="@string/app_description" />
+	
+		<ImageView
+			android:id="@+id/label_img"
+			android:src="@drawable/about_header"
+			android:layout_below="@id/label_app_desc"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:scaleType="centerInside" />
+	
+		<TextView android:id="@+id/label_know_more_desc"
+			style="@style/Desc"
+			android:layout_below="@id/label_img"
+			android:text="@string/tab_about_know_more_desc" />
+	
+		<Button android:id="@+id/bt_know_more"
+			style="@style/Button"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_below="@id/label_know_more_desc"
+			android:text="@string/tab_about_know_more_bt" />
+	</RelativeLayout>
+</ScrollView>
